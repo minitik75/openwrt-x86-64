@@ -32,7 +32,7 @@ jobs:
     - name: Load custom config
       run: |
         cd openwrt
-        cp x86-64.config .config
+        cp ../x86-64.config .config
         make defconfig
 
     - name: Build
